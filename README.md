@@ -1,3 +1,5 @@
+[![apm](https://img.shields.io/apm/v/ironman-syntax.svg?style=flat-square)](https://atom.io/packages/ironman-syntax)
+
 # Ironman syntax for Atom
 
 A syntax scheme for Atom, inspired by IronMan.
@@ -6,11 +8,33 @@ This is a copy of the [Ironman color theme for Sublime Text](https://github.com/
 ![PHP example with Ironman syntax highlighting](https://raw.githubusercontent.com/lode/ironman-syntax/master/ironman.png)
 
 
+## Install
+
+One liner:
+
+``` shell
+apm install ironman-syntax
+```
+
+Or via some clicks:
+
+- Go to *Packages  >  Settings View  >  Install Packages/Themes*
+- Click the *Themes* button
+- Search for `Ironman`  
+- Click *Install*
+
+
 ## To Do
 
 - Markup / Markdown
 - Other languages
 - Underline links?
+
+
+## Languages
+
+- PHP
+- *more to come*
 
 
 ## Contribute
