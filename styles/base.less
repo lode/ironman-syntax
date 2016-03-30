@@ -104,6 +104,35 @@ atom-text-editor, :host {
     }
 }
 
+.source.css {
+    .constant {
+        color: @peach;
+    }
+    
+    .support {
+        &.type {
+            color: @red;
+        }
+        
+        &.property-value {
+            color: @yellow;
+        }
+        
+        &.color {
+            color: @cream;
+            font-style: italic;
+        }
+    }
+    
+    .entity:not(.html) {
+        color: @light-blue;
+        
+        &.pseudo-class {
+            color: @dark-beige;
+        }
+    }
+}
+
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
     padding-left: 1px;
