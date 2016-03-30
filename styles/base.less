@@ -69,7 +69,7 @@ atom-text-editor, :host {
 
 .entity {
     color: @light-blue;
-
+    
     &.other.inherited-class {
         color: @brown;
         font-style: italic;
@@ -130,6 +130,12 @@ atom-text-editor, :host {
         &.pseudo-class {
             color: @dark-beige;
         }
+    }
+}
+
+.source.js {
+    .entity.function {
+        color: @beige;
     }
 }
 
