@@ -12,7 +12,7 @@ This is a copy of the [Ironman color theme for Sublime Text](https://github.com/
 
 One liner:
 
-``` shell
+``` sh
 apm install ironman-syntax
 ```
 
