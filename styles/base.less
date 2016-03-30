@@ -145,6 +145,80 @@ atom-text-editor, :host {
     }
 }
 
+.source.gfm {
+    .markup {
+        -webkit-font-smoothing: auto;
+    }
+    
+    .heading {
+        color: @light-blue;
+        
+        .marker {
+            color: @red;
+        }
+    }
+    
+    .list {
+        color: @light-orange;
+        font-style: normal; // undo variable styling
+    }
+    
+    .link {
+        color: @light-orange;
+        
+        .entity {
+            color: @light-red;
+        }
+    }
+    
+    .hr {
+        color: white;
+    }
+    
+    .emoji {
+        color: @gold;
+    }
+    
+    .raw.inline {
+        color: @very-light-gray;
+    }
+}
+
+// whole line background color for markup
+.line {
+    position: relative;
+    
+    .gfm.code::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -100;
+        background-color: @medium-gray;
+        content: '';
+    }
+    .gfm.hr::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -100;
+        background-color: @dark-blue;
+        content: '';
+    }
+}
+
+// inline code blocks
+atom-text-editor::shadow {
+    .markup.raw.gfm {
+        background-color: @gray;
+    }
+}
+
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
     padding-left: 1px;
