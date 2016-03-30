@@ -74,6 +74,34 @@ atom-text-editor, :host {
         color: @brown;
         font-style: italic;
     }
+    &.other.attribute-name {
+        color: @dark-beige;
+    }
+}
+
+.tag {
+    &.sgml,
+    &.structure,
+    &.block {
+        color: @cream;
+    }
+    
+    .other.attribute-name {
+        color: @cream;
+    }
+    
+    &.inline,
+    &.style {
+        color: @dark-beige;
+        
+        .punctuation {
+            color: @dark-beige;
+        }
+    }
+    
+    &.doctype {
+        color: @light-gray;
+    }
 }
 
 atom-text-editor[mini] .scroll-view,
