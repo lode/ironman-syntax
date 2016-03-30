@@ -69,11 +69,158 @@ atom-text-editor, :host {
 
 .entity {
     color: @light-blue;
-
+    
     &.other.inherited-class {
         color: @brown;
         font-style: italic;
     }
+    &.other.attribute-name {
+        color: @dark-beige;
+    }
+}
+
+.tag {
+    &.sgml,
+    &.structure,
+    &.block {
+        color: @cream;
+        
+        .other.attribute-name {
+            color: @cream;
+        }
+    }
+    
+    &.inline,
+    &.style {
+        color: @dark-beige;
+        
+        .punctuation {
+            color: @dark-beige;
+        }
+    }
+    
+    &.doctype {
+        color: @light-gray;
+    }
+}
+
+.source.css {
+    .constant {
+        color: @peach;
+    }
+    
+    .support {
+        &.type {
+            color: @red;
+        }
+        
+        &.property-value {
+            color: @yellow;
+        }
+        
+        &.color {
+            color: @cream;
+            font-style: italic;
+        }
+    }
+    
+    .entity:not(.html) {
+        color: @light-blue;
+        
+        &.pseudo-class {
+            color: @dark-beige;
+        }
+    }
+}
+
+.source.js {
+    .entity.function {
+        color: @beige;
+    }
+}
+
+.source.sql {
+    .entity.name {
+        color: @light-blue;
+    }
+}
+
+.source.gfm {
+    .markup {
+        -webkit-font-smoothing: auto;
+    }
+    
+    .heading {
+        color: @light-blue;
+        
+        .marker {
+            color: @red;
+        }
+    }
+    
+    .list {
+        color: @light-orange;
+        font-style: normal; // undo variable styling
+    }
+    
+    .link {
+        color: @light-orange;
+        
+        .entity {
+            color: @light-red;
+        }
+    }
+    
+    .hr {
+        color: white;
+    }
+    
+    .emoji {
+        color: @gold;
+    }
+    
+    .raw.inline {
+        color: @very-light-gray;
+    }
+}
+
+// whole line background color for markup
+.line {
+    position: relative;
+    
+    .gfm.code::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -100;
+        background-color: @medium-gray;
+        content: '';
+    }
+    .gfm.hr::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -100;
+        background-color: @dark-blue;
+        content: '';
+    }
+}
+
+// inline code blocks
+atom-text-editor::shadow {
+    .markup.raw.gfm {
+        background-color: @gray;
+    }
+}
+
+.bracket-matcher .region {
+    border-color: @very-light-gray;
 }
 
 atom-text-editor[mini] .scroll-view,
