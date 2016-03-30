@@ -20,21 +20,25 @@ Or via some clicks:
 
 - Go to *Packages  >  Settings View  >  Install Packages/Themes*
 - Click the *Themes* button
-- Search for `Ironman`  
+- Search for `Ironman`
 - Click *Install*
 
 
 ## To Do
 
-- Markup / Markdown
-- Other languages
+- Mustache templating
 - Underline links?
 
 
 ## Languages
 
 - PHP
-- *more to come*
+- SQL
+- HTML
+- CSS
+- Javascript
+- JSON
+- Markup / Markdown
 
 
 ## Contribute
