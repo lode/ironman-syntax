@@ -1,0 +1,82 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+
+    .selection .region {
+        background-color: @syntax-selection-color;
+    }
+}
+
+.comment {
+    color: @light-gray;
+    font-style: italic;
+}
+
+.keyword {
+    color: @red;
+}
+
+.storage {
+    color: @light-orange;
+}
+
+.constant {
+    color: @yellow;
+}
+
+.variable {
+    color: @blue;
+    font-style: italic;
+}
+
+.string {
+    color: @light-red;
+
+    &.regexp {
+        color: @gold;
+    }
+
+    &.numeric {
+        color: @beige;
+    }
+}
+
+.support {
+    &.class {
+        color: @dark-orange;
+    }
+
+    &.other {
+        &.namespace {
+            color: @dark-orange;
+        }
+    }
+
+    &.constant {
+        color: @peach;
+    }
+
+    &.function  {
+        color: @dark-beige;
+
+        &.any-method {
+            color: pink;
+        }
+    }
+}
+
+.entity {
+    color: @light-blue;
+
+    &.other.inherited-class {
+        color: @brown;
+        font-style: italic;
+    }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+    padding-left: 1px;
+}

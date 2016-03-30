@@ -1,0 +1,17 @@
+{
+  "name": "ironman-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A syntax scheme for Atom, inspired by IronMan.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "ironman",
+    "colorful"
+  ],
+  "repository": "https://github.com/lode/ironman-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
