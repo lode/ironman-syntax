@@ -26,7 +26,7 @@ Or via some clicks:
 
 ## To Do
 
-- [Suggestions welcome](https://github.com/lode/ironman-syntax/issues)
+- [Suggestions welcome](https://github.com/lode/ironman-syntax/issues/new)
 
 
 ## Languages
