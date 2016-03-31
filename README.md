@@ -26,7 +26,7 @@ Or via some clicks:
 
 ## To Do
 
-- Underline links?
+- [Suggestions welcome](https://github.com/lode/ironman-syntax/issues)
 
 
 ## Languages
