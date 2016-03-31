@@ -26,7 +26,6 @@ Or via some clicks:
 
 ## To Do
 
-- Mustache templating
 - Underline links?
 
 
@@ -38,6 +37,7 @@ Or via some clicks:
 - CSS
 - Javascript
 - JSON
+- Templating (mustache, handlebars)
 - Markup / Markdown
 
 
