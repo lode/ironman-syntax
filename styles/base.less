@@ -102,6 +102,7 @@ atom-text-editor, :host {
     &.doctype {
         color: @light-gray;
     }
+    
 }
 
 .source.css {
@@ -145,6 +146,22 @@ atom-text-editor, :host {
     }
 }
 
+.template {
+    color: @blue;
+    
+    // be more specific than `.source.sql .entity.name`
+    .entity.name.tag {
+        color: @beige;
+        
+        .punctuation {
+            color: @red;
+        }
+        .entity.function {
+            color: @blue;
+        }
+    }
+}
+
 .source.gfm {
     .markup {
         -webkit-font-smoothing: auto;
@@ -181,6 +198,12 @@ atom-text-editor, :host {
     
     .raw.inline {
         color: @very-light-gray;
+    }
+}
+
+.markup {
+    &.link:hover {
+        text-decoration: underline;
     }
 }
 
